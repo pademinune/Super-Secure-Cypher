@@ -83,26 +83,7 @@ def decrypt(msg):
         if done:
             totallist.append(tmplist)
     return [returnallperms(totallist[i]) for i in range(len(totallist))]
-# print(letters.index("u"))
-# print(encrypt("we will attack the stronghold in the morning. get troops ready."))
-# print(startingletters('v'))
-# print(decrypt("ieccohnean.aiuenrwwmr.elyxorjwer .biomcthergtws tc.lwipywr,a?mb"))
-# print(modinverse(13,20,len(letters)))
-# print(letters[8])
-# print(primes(70,100))
-# print(numprimes(90,2))
 
-# for i in letters:
-#     print(i,letters[(letters.index(i)*numprimes(letters.index(i)+2,1)[0])%len(letters)])
-
-# x = {}
-# for i in letters:
-#     n = input(i+" ")
-#     if n != "no":
-#         x[i] = n
-# print(x)
-
-# msg = "Create a variable to store the new encrypted message.Change your code to store the user's message and not just one character.Add a for loop to your code, and indent the rest of the code so that it is repeated for each character in the message.Test your code. You should see that each character in the message is encrypted and printed one at a time.Let’s add each encrypted character to your newMessage variable.You can print the newMessage as it is being encrypted. Some characters aren’t in the alphabet, which causes an error.Test out your code with some characters that aren’t in the alphabet.For example, you could use the message hi there!!Notice that the space and the ! characters are all encrypted as the letter ‘c’!It would be better if your code didn’t encrypt anything not in the alphabet, but just used the original character."
 # msg = "Hi!"
 msg = input("Enter the message you want to encrypt: ")
 encrypted = encrypt(msg)
